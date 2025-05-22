@@ -5,7 +5,7 @@ import '../css/Home.css';
 // Import images (place these in your public/images folder)
 // Or use image URLs from a CDN
 const images = {
-  hero: '/images/hotel-management-hero.jpg',
+  hero: '../assets/pp.jpeg',
   course1: '/images/course-diploma.jpg',
   course2: '/images/course-bachelor.jpg',
   student1: '/images/student1.jpg',

@@ -1,8 +1,37 @@
 /* Base Styles */
+/* Home.css */
 .home-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('../assets/pp.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Optional: for a fixed background */
+}
+
+/* Optional: Add an overlay for better readability */
+.home-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 0;
+}
+
+/* Ensure content is above the background */
+.home-page > * {
+  position: relative;
+  z-index: 1;
+}
+/* .home-page {
   overflow-x: hidden;
   color: #333;
-}
+} */
 
 /* Hero Section */
 .hero-section {

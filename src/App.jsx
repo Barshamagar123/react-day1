@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './Component/Navbar';
+import Gallery from './Component/Gallery';
 import Home from './Pages/Home';
 import AdmissionForm from './Component/Admissionform';
 
@@ -31,6 +32,7 @@ function App() {
       <div className="app">
         <Navbar />
         
+        
         {/* Show AdmissionForm modal every time */}
         {showAdmissionForm && (
           <AdmissionForm 
@@ -41,7 +43,9 @@ function App() {
 
         {/* Always render routes */}
         <Routes>
+
           <Route path="/" element={<Home />} />
+           <Route path="/Component/Gallery" element={<Gallery />} />
           {/* Add other routes here */}
         </Routes>
       </div>
